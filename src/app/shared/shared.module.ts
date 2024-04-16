@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
-import { ListgroupComponent as ListGroupComponent } from './components/listgroup/listgroup.component';
-
-
+import { HomeLayoutComponent } from './components/home-layout/home-layout.component';
+import { RouterModule } from '@angular/router';
+import { ListgroupComponent } from './components/listgroup/listgroup.component';
 
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, ButtonComponent, ListGroupComponent],
-  imports: [CommonModule],
-  exports: [NavbarComponent, FooterComponent, ButtonComponent, ListGroupComponent]
+  declarations: [NavbarComponent, FooterComponent, ButtonComponent, HomeLayoutComponent,ListgroupComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [NavbarComponent, FooterComponent, ButtonComponent, HomeLayoutComponent, ListgroupComponent]
 })
-export class SharedModule { }
+export class SharedModule {}
